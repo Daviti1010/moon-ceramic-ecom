@@ -1,0 +1,835 @@
+/* ---------------------------- Header ---------------------------- */
+
+
+header {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    height: 80px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+#burger-close {
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nav-bar ul{
+    display: flex;
+    gap: 40px;
+    color: black;
+}
+
+.nav-bar ul li{
+    color: black;
+}
+
+.access-btn {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+
+/* ---------------------------- First Section ---------------------------- */
+
+
+.profile-first-section {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+}
+
+#login-img {
+    width: 555px;
+    max-height: 348px;
+}
+
+.text-block {
+    background-color: rgb(247, 246, 245);
+    width: 555px;
+    max-height: 348px;
+    text-align: center;
+}
+
+#acc {
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#or {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#login {
+    font-size: 40px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+/* ---------------------------- Register Section ---------------------------- */
+
+
+.register-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 7px 10px;
+}
+
+#first_name_id,
+#last_name_id,
+#username_id,
+#password1_id,
+#password2_id,
+#email {
+    width: 250px;
+}
+
+#password1_id {
+    margin-top: 10px;
+}
+
+.radio-genders {
+    margin-top: 15px;
+}
+
+
+#register-btn {
+    background-color: white;
+    padding: 10px 20px;
+    border: 0.5px solid #3A3845;
+    border-radius: 10px;
+    margin-top: 5px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Tauri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#register-btn:hover {
+    background-color: #3A3845;
+    color: whitesmoke;
+}
+
+
+.error-text {
+    margin-bottom: 10px;
+}
+
+
+/* ---------------------------- Footer ---------------------------- */
+
+
+
+.footer {
+    background-color: #3f3f4c;
+    color: #cfcfd4;
+    padding: 60px 80px 30px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 40px;
+}
+
+/* LEFT */
+.footer-left {
+    max-width: 300px;
+    margin-left: 150px;
+}
+
+.logo2 {
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-btn {
+    padding: 10px 24px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-btn:hover {
+    background-color: #fff;
+    color: #3f3f4c;
+}
+
+/* RIGHT */
+.footer-right {
+    display: flex;
+    gap: 60px;
+    margin-right: 150px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-col li:hover {
+    color: #fff;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.footer-bottom a {
+    color: #cfcfd4;
+    text-decoration: underline;
+}
+
+
+
+/* ---------------------------- 1024px ----------------------------*/
+
+@media (max-width: 1024px) {
+
+/* ---------------------------- Header ---------------------------- 1024px */
+
+
+    .nav-bar {
+        font-size: 20px;
+    }
+
+    .header-container {
+        padding: 20px 40px;
+    }
+
+/* ---------------------------- First Section ---------------------------- 1024px */
+
+
+    #login-img {
+        max-width: 100%;
+    }
+
+    .text-block {
+        max-width: 100%;
+    }
+
+    #acc {
+        margin-top: 80px;
+    }
+
+    #login {
+        margin-bottom: 40px;
+    }
+
+/* ---------------------------- Register Section ---------------------------- 1024px */
+
+
+
+/* ---------------------------- Footer ---------------------------- 1024px */
+
+    .logo2 {
+        margin-bottom: 10px;
+    }
+
+    .footer-left {
+        margin-left: 0;
+    }
+
+    .footer-right {
+        margin-right: 0;
+    }
+
+    .footer-col h4 {
+        font-size: 16px;
+    }
+
+    .footer-col li {
+        font-size: 15px;
+    }
+
+    .footer-left p {
+        font-size: 15px;
+    }
+
+    .footer-bottom {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------- 768px ----------------------------*/
+
+@media (max-width: 768px) {
+/* ---------------------------- Header ---------------------------- 768px */
+
+
+    .nav-bar {
+        font-size: 17px;
+    }
+
+    .header-container {
+        padding: 20px 40px;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+
+/* ---------------------------- First Section ---------------------------- 768px */
+
+
+    #login-img {
+        max-width: 100%;
+    }
+
+    .text-block {
+        max-width: 100%;
+    }
+
+    #acc {
+        margin-top: 60px;
+    }
+
+    #login {
+        margin-bottom: 40px;
+    }
+
+/* ---------------------------- Register Section ---------------------------- 768px */
+
+    
+/* ---------------------------- Footer ---------------------------- 768px */
+
+    .footer-left {
+        margin-right: 100px;
+        margin-left: 0;
+    }
+
+    .logo2 {
+        margin-bottom: 10px;
+    }
+
+    .footer-col h4 {
+        font-size: 16px;
+    }
+
+    .footer-col li {
+        font-size: 16px;
+    }
+
+
+}
+
+
+/* ---------------------------- 480px ----------------------------*/
+
+@media (max-width: 480px) {
+
+/* ---------------------------- Header ---------------------------- 480px */
+
+
+    header {
+        width: 100%;
+        height: 80px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 20px;
+        position: relative;
+    }
+
+    .logo {
+        order: 1;
+        position: static;
+        transform: none;
+    }
+
+    .access-btn {
+        order: 2;
+        display: flex;
+        gap: 18px;
+        align-items: center;
+    }
+
+    .burger-menu {
+        order: 3;
+        display: block;
+        z-index: 100;
+
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .access-btn img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .burger-menu img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+        z-index: 20;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 30px;
+        font-size: 20px;
+    }
+
+    .nav-bar.active {
+        right: 0;
+    }
+
+    .burger-menu button {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    #burger-close {
+        display: none;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .burger-menu.active button {
+        display: none;
+    }
+
+    .burger-menu.active #burger-close {
+        display: block;
+    }
+
+/* ---------------------------- First Section ---------------------------- 480px */
+
+    .profile-first-section {
+        flex-direction: column;
+    }
+
+    #login-img {
+        width: 100%;
+    }
+
+    .text-block {
+        width: 100%;
+    }
+
+    #acc {
+        margin-top: 40px;
+    }
+
+    #login {
+        margin-bottom: 40px;
+    }
+
+/* ---------------------------- Register Section ---------------------------- 480px */
+
+.container {
+    flex-direction: column;
+    gap: 0;
+}
+    
+
+/* ---------------------------- Footer ---------------------------- 480px */
+
+.footer {
+    background-color: #3f3f4b;
+    color: #cfcfd4;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-bottom: none;
+}
+
+.footer-left {
+    flex-direction: column;
+    margin-left: 0;
+}
+
+/* LEFT PART */
+.footer-left img {
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 300px;
+}
+
+.footer-btn {
+    background: transparent;
+    border: 1px solid #cfcfd4;
+    color: #cfcfd4;
+    padding: 14px 22px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* RIGHT PART */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid #5a5a66;
+    text-align: center;
+    font-size: 12px;
+    color: #b0b0b5;
+}
+
+.footer-bottom a {
+    color: #b0b0b5;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+}
+
+}
+
+
+/* ---------------------------- 320px ----------------------------*/
+
+
+@media (max-width: 320px) {
+    
+/* ---------------------------- Header ---------------------------- 320px */
+
+     header {
+        width: 100%;
+        height: 80px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 20px;
+        position: relative;
+    }
+
+    .logo {
+        order: 1;
+        position: static;
+        transform: none;
+    }
+
+    .access-btn {
+        order: 2;
+        display: flex;
+        gap: 18px;
+        align-items: center;
+    }
+
+    .burger-menu {
+        order: 3;
+        display: block;
+        z-index: 100;
+
+    }
+
+    .logo img {
+        width: 80px;
+        margin-left: -10px;
+    }
+
+    .access-btn img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .burger-menu img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+        z-index: 20;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 30px;
+        font-size: 20px;
+    }
+
+    .nav-bar.active {
+        right: 0;
+    }
+
+    .burger-menu button {
+        display: block;
+    }
+
+    #burger-close {
+        display: none;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .burger-menu.active button {
+        display: none;
+    }
+
+    .burger-menu.active #burger-close {
+        display: block;
+    }
+
+
+/* ---------------------------- First Section ---------------------------- 320px */
+
+    .profile-first-section {
+        flex-direction: column;
+    }
+
+    #login-img {
+        width: 100%;
+    }
+
+    .text-block {
+        width: 100%;
+    }
+
+    #acc {
+        margin-top: 40px;
+    }
+
+    #login {
+        margin-bottom: 20px;
+    }
+
+/* ---------------------------- Register Section ---------------------------- 320px */
+
+.container {
+    flex-direction: column;
+    gap: 0;
+}
+
+
+
+    
+/* ---------------------------- Footer ---------------------------- 320px */
+
+.footer {
+    background-color: #3f3f4b;
+    color: #cfcfd4;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-bottom: none;
+}
+
+.footer-left {
+    flex-direction: column;
+    margin-left: 0;
+}
+
+/* LEFT PART */
+.footer-left img {
+    width: 90px;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 260px;
+}
+
+.footer-btn {
+    background: transparent;
+    border: 1px solid #cfcfd4;
+    color: #cfcfd4;
+    padding: 10px 18px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* RIGHT PART */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-col h4 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col li {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* BOTTOM */
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid #5a5a66;
+    text-align: center;
+    font-size: 12px;
+    color: #b0b0b5;
+}
+
+.footer-bottom a {
+    color: #b0b0b5;
+    text-decoration: underline;
+}
+}

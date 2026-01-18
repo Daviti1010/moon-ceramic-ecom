@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+
+<body>
+    
+    <header id="header">
+        <div class="header-container">
+
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+
+            <div class="nav-bar">
+                <ul>
+                    <a href="index.html"><li id="nav1">Home</li></a>
+                    <a href=""><li id="nav2">Shop</li></a>
+                    <a href=""><li id="nav3">About</li></a>
+                    <a href=""><li id="nav4">Contact</li></a>
+                </ul>
+            </div>
+
+            <div class="access-btn">
+                <a href="#"><img src="img/Search.png" alt=""></a>
+                <a href="profile.html"><img src="img/Avatar.png" alt=""></a>
+                <a href="#"><img src="img/Heart.png" alt=""></a>
+                <a href="#"><img src="img/Shopping cart.png" alt=""></a>
+            </div>
+
+            <div class="burger-menu">
+                <button><img src="img/burger-menu.webp" alt="menu"></button>
+                <img src="img/burger-x.png" alt="" id="burger-close">
+            </div>
+
+        </div>
+    </header>
+
+
+    <section class="profile-first-section">
+        <img src="img/login-img.png" alt="" id="login-img">
+
+        <div class="text-block">
+            <h1 id="acc">Create An Account</h1>
+            <h2 id="or">or</h2>
+            <h1 id="login">Log In</h1>
+        </div>
+
+    </section>
+
+    <section class="register-section">
+        <form action="" id="registration">
+
+            <div class="container">
+                <div class="left-part">
+                    <div>
+                        <label for="first_name_id">First name *</label><br>
+                        <input type="text" name="first_name" id="first_name_id" placeholder="e.g. Elon"/>
+                        <p class="error-text" id="error-firstname"></p>
+                    </div>
+
+                    <div>
+                        <label for="last_name_id">Last name *</label><br>
+                        <input type="text" name="last_name" id="last_name_id" placeholder="e.g. Musk"/>
+                        <p class="error-text" id="error-lastname"></p>
+                    </div>
+
+                    <div>
+                        <label for="username_id">Username *</label><br>
+                        <input type="text" name="username" id="username_id" placeholder="e.g. Elon_Rich"/>
+                        <p class="error-text" id="error-username"></p>
+                    </div>
+
+                </div>
+
+                <div class="right-part">
+                    <div>
+                        <label for="email">Email *</label><br>
+                        <input type="email" name="emailfield" id="email" placeholder="e.g. elon1@gmail.com"/>
+                        <p id="error-email"></p>
+                    </div>
+
+                    <div>
+                        <label for="password1_id">Password *</label><br>
+                        <input type="password" name="password1" id="password1_id" placeholder="e.g. ********"/>
+                        <i id="icon" class="fa-solid fa-eye"></i>
+                        <p class="error-text" id="error-password1"></p>
+                    </div>
+
+                    <div>
+                        <label for="password2_id">Repeat Password *</label><br>
+                        <input type="password" name="password2" id="password2_id" placeholder="e.g. ********"/>
+                        <p class="error-text" id="error-password2"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-part">
+                <div class="radio-genders">
+                    <input class="input-el" type="radio" name="gender" id="female" />
+                    <label for="">Female</label>
+                    <input class="input-el" type="radio" name="gender" id="male" />
+                    <label for="">Male</label>
+                    <p class="error-text" id="error-gender"></p>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="agree" id="check" />
+                    <label for="">I agree to Terms and Conditions</label>
+                    <p class="error-text" id="error-agree"></p>
+                </div>
+
+                <button id="register-btn">Register</button>
+            </div>
+
+
+    </section>
+
+
+     <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-left">
+            <div class="logo2">
+                <img src="img/logo2.png" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma</p>
+            <button class="footer-btn">GET STARTED →</button>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-col">
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li>Mission</li>
+                    <li>Our team</li>
+                    <li>Awards</li>
+                    <li>Testimonials</li>
+                    <li>Privacy policy</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>SERVICES</h4>
+                <ul>
+                    <li>Web design</li>
+                    <li>Web development</li>
+                    <li>Mobile design</li>
+                    <li>UI/UX design</li>
+                    <li>Branding design</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>PORTFOLIO</h4>
+                <ul>
+                    <li>Corporate websites</li>
+                    <li>E-commerce</li>
+                    <li>Mobile apps</li>
+                    <li>Landing pages</li>
+                    <li>UI/UX projects</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            Copyright © 2023 Moon | All Rights Reserved |
+            <a href="#">Terms and Conditions</a> |
+            <a href="#">Privacy Policy</a>
+        </p>
+    </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
