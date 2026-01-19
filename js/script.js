@@ -18,36 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       }
 
-      // let apiIndex = priceElements1.length;
-      // for (let i = 0; i < priceElements2.length; i++) {
-      //   const product = products[apiIndex % products.length];
-      //   priceElements2[i].textContent = `$${product.price.toFixed(2)}`;
-      //   count2[i].textContent = `Left In Stock: ${product.rating.count} pcs.`;
-      //   apiIndex++;
-      // }
+      let apiIndex = priceElements1.length;
+      for (let i = 0; i < priceElements2.length; i++) {
+        const product = products[apiIndex % products.length];
+        priceElements2[i].textContent = `$${product.price.toFixed(2)}`;
+        count2[i].textContent = `Left In Stock: ${product.rating.count} pcs.`;
+        apiIndex++;
+      }
     })
     .catch(error => {
       console.error('Error fetching products:', error);
     });
 
-    axios.get("https://dummyjson.com/products/category/home-decoration")
-      .then(res => {
-        const products = res.data.products;
-        const images = document.querySelectorAll(".new-arrivals-img");
-        const first_heading = document.querySelectorAll(".new-arrivals-first-heading");
-        const price = document.querySelectorAll(".new-arrivals-second-heading");
-        const stock = document.querySelectorAll(".new-arrivals-p");
 
-        images.forEach((img, index) => {
-          if (products[index]) {
-            img.src = products[index].thumbnail;
-            first_heading[index].textContent = products[index].title;
-            price[index].textContent = `$${products[index].price}`;
-            stock[index].textContent = `Left In Stock: ${products[index].stock} pcs.`;
-          }
-        });
-      })
-      .catch(err => console.log(err));
 
 
 
